@@ -28,4 +28,9 @@ class Stack
     {
         $this->elements[] = $element;
     }
+
+    public function pop(): int
+    {
+        return array_pop($this->elements);
+    }
 }

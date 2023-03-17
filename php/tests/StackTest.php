@@ -109,4 +109,14 @@ class StackTest extends TestCase
         self::assertEquals(2, $result);
     }
 
+    /** @test */
+    public function given_an_non_empty_stack_then_pop_should_decrease_the_size(): void
+    {
+        $stack = new Stack([1,2]);
+
+        $stack->pop();
+
+        self::assertEquals(1, $stack->size());
+    }
+
 }
