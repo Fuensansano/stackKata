@@ -99,4 +99,14 @@ class StackTest extends TestCase
         self::assertEquals(32, $stack->peek());
     }
 
+    /** @test */
+    public function given_an_non_empty_stack_then_pop_should_return_the_top_element(): void
+    {
+        $stack = new Stack([1,2]);
+
+        $result = $stack->pop();
+
+        self::assertEquals(2, $result);
+    }
+
 }
