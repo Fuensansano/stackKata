@@ -4,8 +4,13 @@ namespace Kata;
 
 class Stack
 {
+    public function __construct(private array $elements = [])
+    {
+
+    }
+
     public function isEmpty(): bool
     {
-        return true;
+        return empty($this->elements);
     }
 }

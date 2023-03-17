@@ -5,7 +5,7 @@ namespace KataTests;
 use Kata\Stack;
 use PHPUnit\Framework\TestCase;
 
-class MyClassTest extends TestCase
+class StackTest extends TestCase
 {
     /** @test */
     public function given_an_empty_stack_is_empty_should_be_true(): void
@@ -15,5 +15,15 @@ class MyClassTest extends TestCase
         $result = $stack->isEmpty();
 
         self::assertEquals(true, $result);
+    }
+
+    /** @test */
+    public function given_a_non_empty_stack_is_empty_should_be_false(): void
+    {
+        $stack = new Stack([1]);
+
+        $result = $stack->isEmpty();
+
+        self::assertEquals(false, $result);
     }
 }
