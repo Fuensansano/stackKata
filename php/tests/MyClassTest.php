@@ -15,5 +15,6 @@ class MyClassTest extends TestCase
         $result = $xxx->theMethod();
 
         self::assertEquals(true, $result);
+
     }
 }
