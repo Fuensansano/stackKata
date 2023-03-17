@@ -26,4 +26,14 @@ class StackTest extends TestCase
 
         self::assertEquals(false, $result);
     }
+
+    /** @test */
+    public function given_an_empty_stack_then_should_have_zero_size(): void
+    {
+        $stack = new Stack();
+
+        $result = $stack->size();
+
+        self::assertEquals(0, $result);
+    }
 }

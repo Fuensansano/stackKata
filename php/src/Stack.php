@@ -13,4 +13,9 @@ class Stack
     {
         return empty($this->elements);
     }
+
+    public function size(): int
+    {
+        return 0;
+    }
 }
