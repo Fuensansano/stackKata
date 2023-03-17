@@ -48,14 +48,22 @@ class StackTest extends TestCase
     }
 
     /** @test */
-    public function given_a_non_empty_stack_then_peek_should_return_top_element(): void
+    public function given_a_single_element_stack_then_peek_should_return_that_element(): void
     {
-        $stack = new Stack([1,24]);
+        $stack = new Stack([24]);
 
         $result = $stack->peek();
 
         self::assertEquals(24, $result);
     }
 
+    /** @test */
+    public function given_a_two_element_stack_then_peek_should_return_last_element(): void
+    {
+        $stack = new Stack([24, 48]);
 
+        $result = $stack->peek();
+
+        self::assertEquals(48, $result);
+    }
 }

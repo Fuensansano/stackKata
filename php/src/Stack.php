@@ -21,6 +21,6 @@ class Stack
 
     public function peek(): int
     {
-        return 24;
+        return end($this->elements);
     }
 }
