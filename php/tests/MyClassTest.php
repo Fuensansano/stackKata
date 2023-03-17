@@ -2,19 +2,18 @@
 
 namespace KataTests;
 
-use Kata\TheClass;
+use Kata\Stack;
 use PHPUnit\Framework\TestCase;
 
 class MyClassTest extends TestCase
 {
     /** @test */
-    public function give_me_a_good_name_please(): void
+    public function given_an_empty_stack_is_empty_should_be_true(): void
     {
-        $xxx = new TheClass();
+        $stack = new Stack();
 
-        $result = $xxx->theMethod();
+        $result = $stack->isEmpty();
 
         self::assertEquals(true, $result);
-
     }
 }

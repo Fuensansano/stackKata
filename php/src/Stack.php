@@ -2,9 +2,9 @@
 
 namespace Kata;
 
-class TheClass
+class Stack
 {
-    public function theMethod(): bool
+    public function isEmpty(): bool
     {
         return true;
     }
