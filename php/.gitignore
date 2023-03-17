@@ -1,4 +1,4 @@
-/vendor
+/vendorvendor/bin/phpunit
 /coverage
 *.cache
 composer.lock

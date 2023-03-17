@@ -76,4 +76,27 @@ class StackTest extends TestCase
 
         self::assertEquals(1, $stack->size());
     }
+
+    /** @test */
+    public function given_an_empty_stack_then_push_should_set_the_element_to_peek(): void
+    {
+        $stack = new Stack();
+
+        $stack->push(5);
+
+        self::assertEquals(5, $stack->peek());
+    }
+
+
+    /** @test */
+    public function given_an_empty_stack_then_push_two_elements_and_peek_should_return_the_last_one(): void
+    {
+        $stack = new Stack();
+
+        $stack->push(5);
+        $stack->push(32);
+
+        self::assertEquals(32, $stack->peek());
+    }
+
 }
