@@ -16,6 +16,6 @@ class Stack
 
     public function size(): int
     {
-        return 0;
+        return count($this->elements);
     }
 }

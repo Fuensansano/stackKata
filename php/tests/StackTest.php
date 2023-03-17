@@ -36,4 +36,14 @@ class StackTest extends TestCase
 
         self::assertEquals(0, $result);
     }
+
+    /** @test */
+    public function given_a_two_elements_stack_then_should_have_size_two(): void
+    {
+        $stack = new Stack([1,2]);
+
+        $result = $stack->size();
+
+        self::assertEquals(2, $result);
+    }
 }
