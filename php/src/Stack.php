@@ -23,4 +23,9 @@ class Stack
     {
         return end($this->elements);
     }
+
+    public function push(int $element): void
+    {
+        $this->elements[] = $element;
+    }
 }

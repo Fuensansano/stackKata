@@ -66,4 +66,14 @@ class StackTest extends TestCase
 
         self::assertEquals(48, $result);
     }
+
+    /** @test */
+    public function given_an_empty_stack_then_push_should_increase_the_size(): void
+    {
+        $stack = new Stack();
+
+        $stack->push(1);
+
+        self::assertEquals(1, $stack->size());
+    }
 }
