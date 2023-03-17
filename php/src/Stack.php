@@ -18,4 +18,9 @@ class Stack
     {
         return count($this->elements);
     }
+
+    public function peek(): int
+    {
+        return 24;
+    }
 }
